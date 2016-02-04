@@ -35,10 +35,10 @@
                                 </constraints>
                                 <state key="normal" image="playbtn"/>
                                 <connections>
-                                    <action selector="onPlayBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fmo-uY-b0n"/>
+                                    <action selector="onPlayBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Qnh-qv-vCu"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="How many taps to win?" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7YD-bV-UXf" userLabel="TapsText">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="How many taps to win?" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7YD-bV-UXf" userLabel="TapsText">
                                 <rect key="frame" x="184" y="355" width="234" height="45"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="234" id="e63-az-YnS"/>
@@ -54,6 +54,9 @@
                                     <constraint firstAttribute="height" constant="182" id="M5e-Eu-Cp5"/>
                                 </constraints>
                                 <state key="normal" image="coin"/>
+                                <connections>
+                                    <action selector="onCoinPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZaP-SY-lip"/>
+                                </connections>
                             </button>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100 Taps" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xed-k7-ceQ" userLabel="TapsLabel">
                                 <rect key="frame" x="187" y="218" width="226" height="67"/>
@@ -85,11 +88,11 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="howManyTapsTxt" destination="7YD-bV-UXf" id="uaH-d1-mqQ"/>
-                        <outlet property="logoImg" destination="nI1-KP-lKC" id="CfG-E7-K1K"/>
-                        <outlet property="playBtn" destination="M6p-zC-wAw" id="wt3-YP-A6v"/>
-                        <outlet property="tapBtn" destination="BaR-Ve-eXg" id="TbN-oQ-bLK"/>
-                        <outlet property="tapsLbl" destination="Xed-k7-ceQ" id="LDj-y4-hoB"/>
+                        <outlet property="howManyTapsTxt" destination="7YD-bV-UXf" id="yEF-Ug-g9A"/>
+                        <outlet property="logoImg" destination="nI1-KP-lKC" id="R9o-3L-DLq"/>
+                        <outlet property="playBtn" destination="M6p-zC-wAw" id="d8C-zS-D14"/>
+                        <outlet property="tapBtn" destination="BaR-Ve-eXg" id="yCr-Ld-HI1"/>
+                        <outlet property="tapsLbl" destination="Xed-k7-ceQ" id="WSa-4I-ol5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
